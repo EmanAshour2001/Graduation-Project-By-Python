@@ -16,8 +16,8 @@ plt.show()
 np.expand_dims(resize,0)
 np.expand_dims(resize,0).shape
 yhat = model.predict(np.expand_dims(resize/255, 0))
-
-if yhat > 0.5: 
+#here you shout but 0.4 so I will change it
+if yhat > 0.4: 
     print(f'Predicted class is Sad')
 else:
     print(f'Predicted class is Happy')
